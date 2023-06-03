@@ -59,7 +59,7 @@ function NewFactForm({
       <span>{200 - textLength}</span>
       <input
         type="text"
-        placeholder="Trustworthy source..."
+        placeholder="http://example.ir"
         value={source}
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}
