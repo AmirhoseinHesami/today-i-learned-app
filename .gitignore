@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 package-lock.json
-.env.production
+.env
 
 # testing
 /coverage
