@@ -2,7 +2,9 @@
 
 It is created with `Reactjs` and basically it helps you to post a new fact and then people can vote on your fact.
 
-First you should click on the `share a fact`button. Then you share your fact.
+![Screenshot (9563)](https://github.com/AmirhoseinHesami/hesami-today-learned-app/assets/86534843/feddf2ff-62a8-4683-b650-0e8798a0599b)
+
+First you should click on the `share a fact` button. Then you share your fact.
 
 If you want to share a fact you probally have to include these:
 
@@ -32,11 +34,9 @@ Also there is a caterogy section which includes various categories such as:
 - History
 - News
 
-The app is connected to `Supabase` and you can retrive data from the databse, update and also insert new data.
+🔺 The app is connected to `Supabase` and you can retrive data from the databse, update and also insert new data.
 
 🔹 Not to mention that the app is mobile friendly (It is completely responsive on mobile devices)
-
-`
 
 ## Getting Started with Create React App
 
