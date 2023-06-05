@@ -5,7 +5,6 @@ import CATEGORIES from "./data";
 import FactsList from "./components/FactsList";
 import CategoryFilter from "./components/CategoryFilter";
 import NewFactForm from "./components/NewFactForm";
-import NewFactForm from "./components/NewFactForm";
 import Header from "./components/Header";
 import Loader from "./components/Loader";
 import Error from "./components/Error";

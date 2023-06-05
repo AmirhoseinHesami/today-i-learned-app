@@ -43,22 +43,6 @@ body {
   height: calc(100vh - 170px);
 }
 
-@media (max-width: 900px) {
-  .main {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .message {
-    margin-top: 0 !important;
-    margin-bottom: 38px;
-  }
-
-  .error-message {
-    padding: 30px;
-  }
-}
-
 /* ELEMENTS */
 
 .logo {
@@ -94,6 +78,8 @@ h1 {
 }
 
 .error-message {
+  height: 300px;
+  padding: 15px;
   background-color: #3f3f46;
   border-radius: 30px 0 30px 0;
   display: flex;
@@ -282,6 +268,23 @@ ul {
   .fact-form input,
   .fact-form select {
     width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .message {
+    margin-top: 0 !important;
+    margin-bottom: 38px;
+  }
+
+  .error-message {
+    height: auto;
+    padding: 30px;
   }
 }
 
