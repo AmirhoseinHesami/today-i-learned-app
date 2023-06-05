@@ -2,12 +2,13 @@ import "./style.css";
 import { useEffect, useState } from "react";
 import supabase from "./supabase";
 import CATEGORIES from "./data";
-import FactsList from "./FactsList";
-import CategoryFilter from "./CategoryFilter";
-import NewFactForm from "./NewFactForm";
-import Header from "./Header";
-import Loader from "./Loader";
-import Error from "./Error";
+import FactsList from "./components/FactsList";
+import CategoryFilter from "./components/CategoryFilter";
+import NewFactForm from "./components/NewFactForm";
+import NewFactForm from "./components/NewFactForm";
+import Header from "./components/Header";
+import Loader from "./components/Loader";
+import Error from "./components/Error";
 
 function App() {
   const [showForm, setShowForm] = useState(false);

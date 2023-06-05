@@ -1,5 +1,5 @@
 import { useState } from "react";
-import supabase from "./supabase";
+import supabase from "../supabase";
 
 function isValidHttpUrl(string) {
   try {
