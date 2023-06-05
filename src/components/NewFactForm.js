@@ -34,10 +34,14 @@ function NewFactForm({
         .select();
 
       setIsUploading(false);
-      if (currentCategory !== "all") setCurrentCategory(category);
 
-      if (!error) setFacts((facts) => [newFact[0], ...facts]);
-      else alert("There was a problem uploading Data.");
+      if (!error) {
+        if (currentCategory !== "all" && currentCategory !== category) {
+          setCurrentCategory(category);
+        } else {
+          setFacts((facts) => [newFact[0], ...facts]);
+        }
+      } else alert("There was a problem uploading Data.");
 
       setText("");
       setSource("");
