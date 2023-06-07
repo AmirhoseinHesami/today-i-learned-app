@@ -2,7 +2,7 @@
 
 It is created with `Reactjs` and basically it helps you to post a new fact and then people can vote on your fact.
 
-![Screenshot (9563)](https://github.com/AmirhoseinHesami/hesami-today-learned-app/assets/86534843/feddf2ff-62a8-4683-b650-0e8798a0599b)
+![Screenshot (9574)](https://github.com/AmirhoseinHesami/today-i-learned-app/assets/86534843/40b7d171-d9dd-450f-9745-b192ed513ee2)
 
 First you should click on the `share a fact` button. Then you share your fact.
 
