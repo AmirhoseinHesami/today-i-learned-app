@@ -1,6 +1,11 @@
 import Category from "./Category";
 
-function CategoryFilter({ categories, setCurrentCategory, isLoading }) {
+function CategoryFilter({
+  categories,
+  setCurrentCategory,
+  isLoading,
+  setOrder,
+}) {
   return (
     <aside>
       <ul>
@@ -21,6 +26,19 @@ function CategoryFilter({ categories, setCurrentCategory, isLoading }) {
             isLoading={isLoading}
           />
         ))}
+        <li className="drop-down">
+          <select id="options" onChange={(e) => setOrder(e.target.value)}>
+            <option value="Interesting" disabled={isLoading}>
+              Interesting
+            </option>
+            <option value="Mindblowing" disabled={isLoading}>
+              Mindblowing
+            </option>
+            <option value="False" disabled={isLoading}>
+              False
+            </option>
+          </select>
+        </li>
       </ul>
     </aside>
   );

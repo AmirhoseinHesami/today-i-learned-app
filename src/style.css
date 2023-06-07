@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   background-color: #f5f5f5;
 }
 
@@ -140,6 +140,35 @@ section {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 100px;
+  cursor: pointer;
+}
+
+#options {
+  /* background: linear-gradient(to right, #16a085, #f4d03f); */
+  /* background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae); */
+  /* background: linear-gradient(to right, #314755, #26a0da); */
+  /* background: linear-gradient(to right, #e65c00, #f9d423); */
+  /* background: linear-gradient(to right, #ec008c, #fc6767); */
+  /* background: linear-gradient(to right, #c31432, #240b36); */
+  /* background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); */
+  /* background: linear-gradient(to right, #2c3e50, #fd746c); */
+
+  background: linear-gradient(to right, #bbd2c5, #536976);
+  border: none;
+  border-radius: 100px;
+  padding: 20px 10px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  text-align: center;
+}
+
+#options option {
+  background-color: #3f3f46;
+  color: #ffffff;
 }
 
 .vote-buttons {
@@ -173,6 +202,10 @@ section {
 
 ul {
   list-style: none;
+}
+
+aside {
+  margin-bottom: 20px;
 }
 
 .source:link,
@@ -275,6 +308,10 @@ ul {
   .main {
     grid-template-columns: 1fr;
     height: auto;
+  }
+
+  aside {
+    margin-bottom: auto;
   }
 
   .message {

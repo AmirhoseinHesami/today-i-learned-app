@@ -15,6 +15,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, isSetError] = useState(false);
   const [currentCategory, setCurrentCategory] = useState("all");
+  const [order, setOrder] = useState("Interesting");
 
   useEffect(
     function () {
@@ -27,7 +28,7 @@ function App() {
           query = query.eq("category", currentCategory);
 
         let { data: facts, error } = await query
-          .order("votesInteresting", { ascending: false })
+          .order(`votes${order}`, { ascending: false })
           .limit(50);
 
         if (!error) setFacts(facts);
@@ -37,7 +38,7 @@ function App() {
       }
       getData();
     },
-    [currentCategory]
+    [currentCategory, order]
   );
 
   return (
@@ -55,6 +56,7 @@ function App() {
 
       <main className="main">
         <CategoryFilter
+          setOrder={setOrder}
           categories={CATEGORIES}
           setCurrentCategory={setCurrentCategory}
           isLoading={isLoading}
@@ -66,6 +68,7 @@ function App() {
           <Loader />
         ) : (
           <FactsList
+            setCurrentCategory={setCurrentCategory}
             facts={facts}
             setFacts={setFacts}
             categories={CATEGORIES}

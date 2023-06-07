@@ -1,6 +1,6 @@
 import Fact from "./Fact";
 
-function FactsList({ facts, categories, setFacts }) {
+function FactsList({ facts, categories, setFacts, setCurrentCategory }) {
   if (!facts.length) {
     return (
       <p className="message">
@@ -18,6 +18,7 @@ function FactsList({ facts, categories, setFacts }) {
             setFacts={setFacts}
             key={fact.id}
             categories={categories}
+            setCurrentCategory={setCurrentCategory}
           />
         ))}
       </ul>

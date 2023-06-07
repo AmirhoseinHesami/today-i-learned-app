@@ -1,7 +1,7 @@
 import { useState } from "react";
 import supabase from "../supabase";
 
-function Fact({ fact, categories, setFacts }) {
+function Fact({ fact, categories, setFacts, setCurrentCategory }) {
   const [isUploading, setIsUploading] = useState(false);
   const isDisputed =
     fact.votesInteresting + fact.votesMindblowing < fact.votesFalse;
@@ -36,6 +36,9 @@ function Fact({ fact, categories, setFacts }) {
         style={{
           backgroundColor: categories.find((cat) => cat.name === fact.category)
             .color,
+        }}
+        onClick={() => {
+          setCurrentCategory(fact.category);
         }}
       >
         {fact.category}
